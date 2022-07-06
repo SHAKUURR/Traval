@@ -1,0 +1,395 @@
+
+/*......................................................................................*/
+/* BASIC-SETUP  */
+/*......................................................................................*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	background-color: #fff;
+	color: #555;
+	font-family: poppins;
+	font-weight: 300;
+	font-size: 20px;
+	text-rendering: optimizeLegibility;
+}
+
+/*......................................................................................*/
+/* REUSEABLE COMPONENT  */
+/*......................................................................................*/
+
+.row{
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+section{
+	padding: 40PX 0;
+}
+
+
+/*.......HEADINGS........*/
+
+h1{
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 300%;
+	word-spacing: 4px;
+	letter-spacing: 2px;
+	margin-bottom: 10px;
+}
+
+h2{
+	text-transform: uppercase;
+	font-size: 120%;
+	margin-top: 3%;
+	word-spacing: 8px;
+	letter-spacing: 3px;
+	text-align: center;
+	color: #030363;
+	margin-bottom: 9px;
+}
+
+h2:after{
+	display: block;
+	margin-bottom: 30px;
+	background-color: #02024a;
+	content: " ";
+	height: 2px;
+	width: 100px;
+	margin: 0 auto;
+}
+
+h5{
+	color: #02024a;
+}
+
+/*......................................................................................*/
+/* HEADER*/
+/*......................................................................................*/
+header{
+	background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7) ), url(hero.jpg);
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+}
+
+
+.hero-text{
+	position: absolute;
+	width: 1140px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.hero-text p{
+	color: #fff;
+	font-size: 100%;
+
+}
+
+
+
+
+.logo{
+	float: left;
+	height: 40px;
+	width: auto;
+	margin-top: 20px;
+}
+
+.main-nav{
+	float: right;
+	list-style: none;
+	margin-top: 30px;
+	margin-left: 0;
+
+}
+
+.main-nav li{
+	text-transform: uppercase;
+	display: inline-block;
+   	margin-right: 35px;
+
+}
+
+.main-nav li:hover,
+.main-nav li:active{
+	border-bottom: 1px solid #EBEBF5;
+}
+.main-nav a{
+	text-decoration: none;
+	color: #fff;
+}
+
+/*......................................................................................*/
+/* DISCOVER PLACES*/
+/*......................................................................................*/
+
+.places p{
+	text-align: center;
+	font-size: 15px;	
+}
+
+.section-work{
+	margin-top: 20px;
+	color: #000;
+	background-color: #EBEBF5;
+	width: 90%;
+	margin-left: 5%;
+	border-radius: 10px;
+
+}
+
+.section-work h5{
+	margin-top: 10px;
+	
+}
+.section-work p{
+	font-size: 15px;
+}
+
+.box{
+	text-align: center; 
+	margin-left: 15px;
+
+}	
+
+.icon{
+	font-size: 200%;
+	color: #02024a;
+}
+
+
+
+/*......................................................................................*/
+/*POPULAR PLACES*/
+/*......................................................................................*/
+
+.location p,
+.Explore p{
+	text-align: center;
+	font-size: 15px;
+}
+
+.box2 img{
+	width: 100%;
+	height: auto;
+	margin-bottom: 15px;
+	margin-right: 2%;
+	border: 1px solid #555;
+	border-radius: 5px;
+}
+
+.box2 h5{
+	text-align: left;
+	color: #555;
+	font-size: 110%;
+	text-transform: uppercase;
+	display: inline-block;
+	margin-right: 250px;
+}
+
+
+.box2 a{
+	text-decoration: none;
+	font-weight: 300;
+	color: #fff;
+	background-color: #02024a; 
+	border-radius: 5px;
+	padding: 3px 5px;
+	font-size: 15px;
+}
+
+.box2 a:link,
+.box2 a:visited{
+	color: #fff;
+	background-color:#02024a;
+	border: 2px solid #02024a;
+	transition: background-color 0.2s, color 0.2s, font-weight 0.2s, border 0.2s;
+}
+
+.box2 a:hover,
+.box2 a:active{
+	color: #02024a;
+	font-weight: bold;
+	background-color: #fff;
+	border: 2px solid #02024a;
+}
+
+/*......................................................................................*/
+/*TESTIMONIES*/
+/*......................................................................................*/
+blockquote{
+	padding: 1%;
+	font-style: italic;
+	font-size: 100%;
+	position: relative;
+	text-align: center;
+	margin-top: 30px;
+}
+
+blockquote:before{
+	content: "\201C";
+	font-size: 300%;
+	display: block;
+    position: absolute;
+    top: -5px;
+    margin-left: 160px;
+}
+
+cite{
+	font-size: 70%;
+	display: block;
+	margin-top: 30px;
+
+}
+
+cite img{
+	height: 45px;
+	border-radius: 50%;
+	border: 2px solid #02024a;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+/*......................................................................................*/
+/*EXPLORE*/
+/*......................................................................................*/
+.Explore{
+	background-color: #EBEBF5;
+	width: 80%;
+	margin-left: 10%;
+	height: auto;
+	border-radius: 20px;
+}
+
+.Explore p{
+	margin-bottom: 50px;
+}
+.btn:link,
+.btn:visited{
+	text-decoration: none;
+	margin-left: 43%;
+	color: #fff;
+	font-size: 18px;
+	background-color: #02024a;
+	border-radius: 20px;
+	padding: 5px 50px;
+	transition: background-color 0.2s, color 0.2s, border 0.2s, font-weight 0.2s;
+}
+
+.btn:hover,
+.btn:active{
+	background-color: #fff;
+	color: #02024a;
+	font-weight: bold;
+	border: 1px solid #02024a;
+
+}
+
+/*......................................................................................*/
+/*FOOTER*/
+/*......................................................................................*/
+
+footer{
+	margin-top: 90px;
+	padding-left: 50px;
+}
+footer a:link,
+footer a:visited{
+	text-decoration: none;
+	color:#555;
+}
+
+footer a:hover,
+footer a:active{
+	color: #02024a;
+	
+}
+
+footer img{
+	width: 80%;
+	height: auto;
+}
+
+footer p{
+	font-size: 15px;
+	padding:10px 0 10px 0;
+}
+
+
+.box-2:first-child{
+	padding-right: 12px;
+	margin-top: -3px;	
+}
+
+.iconn{
+	list-style: none;
+}
+
+.iconn li{
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.iconn li a:link,
+.iconn li a:visited{
+	text-decoration: none;
+	color: #555;
+	font-size: 20px;
+	transition: font-size 0.2s;
+}
+
+.iconn li a:hover,
+.iconn li a:active{
+	font-size: 18px;
+}
+
+.ion-social-facebook:hover{
+	color: #3b5998;
+}
+.ion-social-twitter:hover{
+	color: #00aced;
+}
+.ion-social-linkedin:hover{
+	color: #02024a;
+}
+.ion-social-instagram:hover{
+	color: #d54b39;
+}
+
+.copy{
+	text-align: center;
+	margin-top: 40px;
+
+}
+
+.btn-2{
+	text-decoration: none;
+
+}
+
+
+.btn-2:link,
+.btn-2:visited{
+	background-color: #fff;
+	color: #02024a;
+	border-radius: 15px;
+	padding: 2px 55px;
+	border: 2px solid #02024a;
+}
+
+.btn-2:hover,
+.btn-2:active{
+	color: #fff;
+	background-color: #02024a;
+	border-radius: 15px;
+	border: 2px solid #02024a;
+	padding: 2px 55px;
+	transition: background-color 0.2s, color 0.2s, border 0.2s, font-weight 0.2s;
+}
